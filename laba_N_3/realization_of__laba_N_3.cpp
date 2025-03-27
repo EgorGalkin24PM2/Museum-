@@ -125,12 +125,12 @@ namespace database {
     }
 
     void search_exhibits(const vector<Exhibit>& exhibits) {
-        string query;
+        string exhgibit;
         cout << "\nWrite the index of exhibit, which you would find: ";
-        getline(cin, query);
+        getline(cin, exhgibit);
 
         for (const auto& exhibit : exhibits) {
-            if (exhibit.getName().find(query) != string::npos) {
+            if (exhibit.getName().find(exhgibit) != string::npos) {
                 cout << exhibit << "\n";
             }
         }

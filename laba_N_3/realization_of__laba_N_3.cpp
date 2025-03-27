@@ -17,7 +17,7 @@ int Exhibit::getYear() const {
 }
 
 void Exhibit::setName(const string& name) {
-    this->name = name;
+    this->name = name; //  я прочитал, что нам для работой с переменной класса нужен этот указатель(this ->), так как названия параметра и самой переменной совпадают, мы, грубо говоря, разименовали
 }
 
 void Exhibit::setMaterial(const string& material) { 

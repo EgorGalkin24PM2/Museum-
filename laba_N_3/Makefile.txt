@@ -1,0 +1,1 @@
+g++ laba_N_3.cpp realization_of__laba_N_3.cpp

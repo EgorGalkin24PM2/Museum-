@@ -119,7 +119,7 @@ namespace database {
     }
 
     void list_exhibits(const vector<Exhibit>& exhibits) {
-        for (size_t i = 0; i < exhibits.size(); ++i) {
+        for (size_t i = 0; i < exhibits.size(); i++) {
             cout << "Index: " << i << "\n" << exhibits[i] << "\n";
         }
     }

@@ -8,20 +8,20 @@ const string& Exhibit::getName() const {
     return name;
 }
 
+void Exhibit::setName(const string& name) {
+    this->name = name; //  я прочитал, что нам для работы с переменной класса нужен этот указатель(this ->), так как названия параметра и самой переменной совпадают, мы, грубо говоря, разименовали переменную name
+}
+
 const string& Exhibit::getMaterial() const { 
     return material; 
 }
 
-int Exhibit::getYear() const {
-    return year;
-}
-
-void Exhibit::setName(const string& name) {
-    this->name = name; //  я прочитал, что нам для работой с переменной класса нужен этот указатель(this ->), так как названия параметра и самой переменной совпадают, мы, грубо говоря, разименовали
-}
-
 void Exhibit::setMaterial(const string& material) { 
     this->material = material;
+}
+
+int Exhibit::getYear() const {
+    return year;
 }
 
 void Exhibit::setYear(int year) {
